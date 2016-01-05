@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../burpsuit/.idea/burpsuit.iml" filepath="$PROJECT_DIR$/../burpsuit/.idea/burpsuit.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/socket.iml" filepath="$PROJECT_DIR$/.idea/socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../trojan/.idea/trojan.iml" filepath="$PROJECT_DIR$/../trojan/.idea/trojan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web/.idea/web.iml" filepath="$PROJECT_DIR$/../web/.idea/web.iml" />
     </modules>
   </component>
 </project>

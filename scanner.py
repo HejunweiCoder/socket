@@ -7,9 +7,9 @@ from netaddr import IPAddress,IPNetwork
 
 from ctypes import *
 
-host="10.90.150.35"
+host="192.168.186.143"
 
-subnet="10.90.150.0/24"
+subnet="192.168.186.143/24"
 
 magic_message="PYTHONRULES!"
 
@@ -27,7 +27,7 @@ def udp_sender(subnet,magic_message):
 
 
 class IP(Structure):
-    #it's ctypes Structure usages must be _fields_
+    #it's ctypes Structure usages must be _fields_,it's extends from Structure
     _fields_=[
         ("ihl",c_uint8,4),
         ("version",c_uint8,4),
@@ -45,6 +45,7 @@ class IP(Structure):
     #also ctypes include we use it for _fields_ maybe I think ...it's a question
     def __new__(self, socket_buffer=None):
         return self.from_buffer_copy(socket_buffer)
+
 
     def __init__(self,socket_buffer=None):
         self.protocol_map={1:"ICMP",6:"TCP",17:"UDP"}
